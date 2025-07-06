@@ -1,0 +1,106 @@
+[
+  [
+    {
+      "id": 1,
+      "front": "Qu'est-ce que le Code de la Route ?",
+      "back": "L'ensemble des règles à respecter par les usagers de la route pour éviter les accidents et assurer une circulation fluide."
+    },
+    {
+      "id": 2,
+      "front": "Qu'est-ce qu'une piste cyclable ?",
+      "back": "Une chaussée exclusivement réservée aux cycles (vélos)."
+    },
+    {
+      "id": 3,
+      "front": "Quelle est la vitesse maximale en agglomération ?",
+      "back": "50 km/h (sauf indication contraire)."
+    },
+    {
+      "id": 4,
+      "front": "Que signifie un feu rouge ?",
+      "back": "Arrêt absolu avant la ligne stop ou le feu."
+    },
+    {
+      "id": 5,
+      "front": "Quand utiliser les feux de croisement ?",
+      "back": "De nuit en agglomération éclairée, par visibilité réduite, et quand on suit un véhicule."
+    },
+    {
+      "id": 6,
+      "front": "Distance de sécurité minimale par temps sec ?",
+      "back": "2 secondes entre véhicules (environ 50m à 90km/h)."
+    },
+    {
+      "id": 7,
+      "front": "Que faire à un stop ?",
+      "back": "Immobilisation complète avant la ligne, céder le passage à tous les usagers."
+    },
+    {
+      "id": 8,
+      "front": "Quand est-il obligatoire de porter la ceinture ?",
+      "back": "Toujours, à l'avant comme à l'arrière lorsque les places en sont équipées."
+    },
+    {
+      "id": 9,
+      "front": "Qu'est-ce qu'un cédez-le-passage ?",
+      "back": "Obligation de céder le passage sans obligation d'arrêt (sauf danger)."
+    },
+    {
+      "id": 10,
+      "front": "Que signifie un panneau triangulaire rouge ?",
+      "back": "Un danger à proximité (avertissement)."
+    }
+  ],
+  [
+    {
+      "id": 11,
+      "front": "Quels documents doit-on avoir en voiture ?",
+      "back": "Permis de conduire, carte grise, attestation d'assurance, contrôle technique (si applicable)."
+    },
+    {
+      "id": 12,
+      "front": "Validité du permis probatoire ?",
+      "back": "3 ans avec 6 points (puis 12 points si infractions)."
+    },
+    {
+      "id": 13,
+      "front": "Qu'est-ce que la carte grise ?",
+      "back": "Document officiel prouvant l'identité du véhicule et son propriétaire."
+    },
+    {
+      "id": 14,
+      "front": "Quand faire le contrôle technique ?",
+      "back": "4 ans après la 1ère mise en circulation, puis tous les 2 ans."
+    },
+    {
+      "id": 15,
+      "front": "Sanction si absence d'assurance ?",
+      "back": "Amende jusqu'à 3 750€, suspension de permis, immobilisation du véhicule."
+    },
+    {
+      "id": 16,
+      "front": "Âge minimum pour le permis B ?",
+      "back": "18 ans (17 ans pour conduite accompagnée)."
+    },
+    {
+      "id": 17,
+      "front": "Documents pour un véhicule utilitaire ?",
+      "back": "Permis adapté, carte grise, assurance spécifique, contrôle technique annuel."
+    },
+    {
+      "id": 18,
+      "front": "Validité d'un certificat médical ?",
+      "back": "5 ans pour 18-40 ans, 3 ans pour 40-52 ans, 2 ans pour 52-60 ans, 1 an après 60 ans."
+    },
+    {
+      "id": 19,
+      "front": "Que contient la carte grise ?",
+      "back": "Identité propriétaire, caractéristiques techniques, numéro d'immatriculation, date 1ère mise en circulation."
+    },
+    {
+      "id": 20,
+      "front": "Sanction si défaut de contrôle technique ?",
+      "back": "Amende de 135€, immobilisation possible du véhicule."
+    }
+  ]
+]
