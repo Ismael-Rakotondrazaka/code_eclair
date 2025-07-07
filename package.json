@@ -17,6 +17,7 @@
     "@nuxt/icon": "1.15.0",
     "@nuxt/image": "1.10.0",
     "@pinia/nuxt": "0.11.1",
+    "@vite-pwa/nuxt": "1.0.4",
     "@vueuse/nuxt": "13.5.0",
     "es-toolkit": "^1.39.6",
     "eslint": "^9.0.0",
