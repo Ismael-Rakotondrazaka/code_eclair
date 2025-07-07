@@ -4,6 +4,7 @@ import { generateAntdColorThemes } from "@bg-dev/nuxt-naiveui/utils";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
+
   devtools: { enabled: true },
 
   modules: [
@@ -15,12 +16,24 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
     "@vueuse/nuxt",
+    "@nuxtjs/seo",
   ],
+
   naiveui: {
     themeConfig: {
       ...generateAntdColorThemes({
         primary: "#2196F3",
       }),
     },
+  },
+
+  site: {
+    indexable: true,
+    name: "Code Éclair",
+    description: "Apprends vite. Révise fort. Réussis le Code.",
+  },
+
+  ogImage: {
+    enable: false,
   },
 });
