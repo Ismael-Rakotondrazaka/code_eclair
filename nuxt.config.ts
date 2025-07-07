@@ -15,12 +15,18 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
     "@vueuse/nuxt",
+    "@vite-pwa/nuxt",
   ],
   naiveui: {
     themeConfig: {
       ...generateAntdColorThemes({
         primary: "#2196F3",
       }),
+    },
+  },
+  pwa: {
+    devOptions: {
+      enabled: true,
     },
   },
 });
