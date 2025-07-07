@@ -4,6 +4,7 @@
       <n-message-provider>
         <n-dialog-provider>
           <nuxt-layout>
+            <nuxt-pwa-manifest />
             <nuxt-page />
           </nuxt-layout>
         </n-dialog-provider>
