@@ -40,6 +40,11 @@ bun run dev
 
 ## Production
 
+Setup your own data files in the `assets/data` directory. You can use the provided example files as a reference.
+
+- `chapters.example.json` contains the chapters of the book.
+- `cards.example.json` contains the cards for each chapter.
+
 Build the application for production:
 
 ```bash
