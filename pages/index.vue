@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { SelectOption } from "naive-ui";
 import { NCarousel } from "naive-ui";
 import { useCardStore } from "~/store/card";
 
@@ -13,6 +14,22 @@ const { width } = useWindowSize();
 const isLarge = computed(() => width.value < 1024); // Adjust breakpoint as needed
 const slidesPerView = computed(() => (isLarge.value ? 1 : 3));
 const year = computed(() => new Date().getFullYear());
+const allChaptersOption: SelectOption = {
+  label: "Tous les chapitres",
+  value: -1,
+};
+const options = computed<SelectOption[]>(() => {
+  return [
+    allChaptersOption,
+    ...cardStore.chapters.map((chapter) => ({
+      label: `Chapitre ${chapter.id} : ${chapter.title}`,
+      value: chapter.id,
+    })),
+  ];
+});
+const onUpdateCurrentChapter = (value: number) => {
+  cardStore.setCurrentChapter(value > 0 ? value : null);
+};
 </script>
 
 <template>
@@ -20,10 +37,12 @@ const year = computed(() => new Date().getFullYear());
     class="w-full min-h-[calc(100vh-88px)] flex flex-wrap justify-center items-center"
   >
     <div class="w-full py-3">
-      <h1 class="text-center text-lg font-bold mb-3 text-[#1E3A8A]">
-        Chapitre {{ cardStore.currentChapter.id }}&nbsp;:
-        {{ cardStore.currentChapter.title }}
-      </h1>
+      <n-select
+        :options="options"
+        size="large"
+        class="mb-7 mx-auto w-full max-w-xl"
+        @update-value="onUpdateCurrentChapter"
+      />
 
       <n-carousel
         id="carousel"
@@ -38,10 +57,11 @@ const year = computed(() => new Date().getFullYear());
         :show-dots="false"
       >
         <FlipCard
-          v-for="card in cardStore.cards"
+          v-for="(card, index) in cardStore.cards"
           :id="card.id"
           :key="card.id"
-          :is-current="cardStore.current.id === card.id"
+          :is-current="cardStore.current?.id === card.id"
+          :index="index"
           class="mx-auto"
           :back="card.back"
           :front="card.front"

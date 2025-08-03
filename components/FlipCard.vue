@@ -1,6 +1,6 @@
 <template>
   <div
-    class="card-container h-[500px] w-sm"
+    class="card-container h-[500px] w-full md:w-xs xl:w-md"
     :style="{
       perspective: '1000px',
     }"
@@ -12,21 +12,25 @@
     >
       <!-- Front Side -->
       <div
-        class="card-face bg-[#1E3A8A] p-4 flex flex-col justify-center items-center absolute w-full h-full backface-hidden overflow-auto"
+        class="card-face bg-[#1E3A8A]  rounded-lg p-4 absolute w-full h-full backface-hidden overflow-auto"
       >
+      <div class="flex flex-col h-full justify-between">
         <p
-          class="text-base lg:text-lg whitespace-pre-wrap font-bold text-white"
+          class="text-xl lg:text-2xl whitespace-pre-wrap font-bold text-white"
         >
           {{ id }}. {{ front }}
         </p>
+
+          <p class="text-white text-lg text-right">{{ index + 1 }}/{{ cardStore.cards.length }}</p>
+        </div>
       </div>
 
       <!-- Back Side -->
       <div
-        class="card-face bg-[#E3F2FD] p-4 flex flex-col justify-center items-center absolute w-full h-full backface-hidden rotate-y-180 overflow-auto"
+        class="card-face bg-[#E3F2FD]  rounded-lg p-4 absolute w-full h-full backface-hidden rotate-y-180 overflow-auto"
       >
         <p
-          class="text-base lg:text-lg whitespace-pre-wrap font-bold text-[#1E3A8A]"
+          class="text-xl lg:text-2xl whitespace-pre-wrap font-bold text-[#1E3A8A]"
         >
           {{ back }}
         </p>
@@ -44,6 +48,7 @@ interface Props {
   id: number;
   front: string;
   back: string;
+  index: number;
 }
 
 const props = defineProps<Props>();
